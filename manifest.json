@@ -1,0 +1,35 @@
+{
+	"manifest_version": 3,
+	"name": "m3u8Detector",
+	"version": "1.0",
+	"description": "m3u8 request detector",
+	"permissions": [
+		"debugger",
+		"storage",
+		"scripting",
+		"tabs",
+		"webRequest",
+		"webNavigation",
+		"background",
+		"notifications",
+		"nativeMessaging"
+	],
+	"host_permissions": ["http://*/*", "https://*/*"],
+
+	"background": {
+		"service_worker": "background.js"
+	},
+	"icons": {
+		"16": "img/icon.png",
+		"48": "img/icon.png",
+		"128": "img/icon.png"
+	},
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "img/icon.png",
+			"48": "img/icon.png",
+			"128": "img/icon.png"
+		}
+	}
+}
